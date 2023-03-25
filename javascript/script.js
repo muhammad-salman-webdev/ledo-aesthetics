@@ -1,5 +1,6 @@
 "use strict";
 
+// Menu management for mobile screens
 const mobileMenu = document.getElementById("social-nav-container");
 const menuCloseBtn = mobileMenu.querySelector(".menu-close-btn");
 const menuOverlay = document.getElementById("mobile-menu-overly");
@@ -26,4 +27,19 @@ subMenus.forEach((subMenu) => {
         subMenu.classList.toggle("closed");
         subMenu.classList.toggle("opened");
     });
+});
+
+// Go to top button show/hide
+const topBtn = document.getElementById("go-to-top-btn");
+
+window.addEventListener("scroll", (e) => {
+    if (window.scrollY > window.innerHeight) {
+        topBtn.classList.add("shown");
+    } else {
+        topBtn.classList.remove("shown");
+    }
+});
+
+topBtn.addEventListener("click", () => {
+    window.scroll(0, 0);
 });
