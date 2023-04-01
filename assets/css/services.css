@@ -1,0 +1,41 @@
+.slide-container {
+  margin: 0 0 40px 0;
+}
+
+.slide-content {
+  overflow: hidden;
+}
+
+.card {
+  width: 150px;
+  aspect-ratio: 1/1;
+  display: block;
+}
+.slider-service-item {
+  border-radius: 10px;
+  border: 1.5px solid var(--primary);
+  aspect-ratio: 1/1;
+  user-select: none;
+  width: 100%;
+  background: url(../images/tree-bg.png);
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.slider-service-item span {
+  display: flex;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: inherit;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  transform: scale(0.9);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 130%;
+  word-break: break-all;
+}
+.slider-service-item:hover span {
+  transform: scale(1);
+}
