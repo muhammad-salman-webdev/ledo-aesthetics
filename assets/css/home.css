@@ -1,14 +1,13 @@
 .hero-section {
-  background: url(../images/top-section-bg.jpg);
-  background-size: 100% 400px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 400px;
   width: 100%;
+  background: url(../images/top-section-bg.jpg) no-repeat center;
+  background-size: auto 400px;
+  height: 400px;
+  margin-top: 30px;
 }
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 650px) {
   .hero-section {
+    background: url(../images/top-section-bg-mobile.jpg) no-repeat center;
     background-size: auto 400px;
   }
 }
