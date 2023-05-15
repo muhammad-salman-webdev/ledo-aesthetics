@@ -7,8 +7,8 @@ var swiper = new Swiper(".slide-content", {
   grabCursor: "true",
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".item-navigator.prev",
+    prevEl: ".item-navigator.next",
   },
 
   breakpoints: {

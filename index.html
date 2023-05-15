@@ -106,8 +106,8 @@
                     </li>
                     <li class="submenu-item">
                       <a href="services.hydrofocials.html">
-                        <span>hydrofocials</span></a
-                      >
+                        <span>hydrofocials</span>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -148,7 +148,10 @@
     </div>
 
     <!-- services section -->
-    <div class="container">
+    <div class="container services-section">
+      <div class="item-navigator prev">
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
       <div class="services-container">
         <a href="services.botox.html" class="service-item">
           <div class="service-name">Botox</div>
@@ -176,6 +179,9 @@
         <a href="services.hydrofocials.html" class="service-item">
           <div class="service-name">hydrofocials</div>
         </a>
+      </div>
+      <div class="item-navigator next">
+        <i class="fa-solid fa-chevron-right"></i>
       </div>
     </div>
 
@@ -247,3 +253,22 @@
 </html>
 <!-- Custom JavaScript global file link -->
 <script src="javascript/script.js"></script>
+<script>
+  "use strict";
+  const scrollerEl = document.querySelector(
+    ".container.services-section .services-container"
+  );
+  const scrollerPrevBtn = document.querySelector(
+    ".container.services-section .item-navigator.prev"
+  );
+  const scrollerNextBtn = document.querySelector(
+    ".container.services-section .item-navigator.next"
+  );
+
+  scrollerPrevBtn.addEventListener("click", () => {
+    scrollerEl.scroll({ left: scrollerEl.scrollLeft - 160 });
+  });
+  scrollerNextBtn.addEventListener("click", () => {
+    scrollerEl.scroll({ left: scrollerEl.scrollLeft + 160 });
+  });
+</script>
