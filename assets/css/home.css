@@ -1,0 +1,91 @@
+.hero-section {
+  width: 100%;
+  background: url(../images/top-section-bg.jpg) no-repeat center;
+  background-size: auto 400px;
+  height: 400px;
+  margin-top: 30px;
+}
+@media screen and (max-width: 650px) {
+  .hero-section {
+    background: url(../images/top-section-bg-mobile.jpg) no-repeat center;
+    background-size: auto 400px;
+  }
+}
+.hero-section .hero-section-title {
+  font-weight: 100;
+  font-size: 50px;
+}
+.hero-section .primary-btn-bg {
+  padding: 18px 45px;
+  font-size: 30px;
+}
+.hero-section .primary-btn-bg:hover {
+  transform: scale(1.1);
+}
+
+.hero-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  padding: 0 0 0 70px;
+}
+
+/* Services section */
+.services-container {
+  margin: 70px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 3fr));
+  grid-gap: 15px;
+  scroll-behavior: smooth;
+}
+.service-item {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  background: url(../images/tree-bg.png);
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.service-item .service-name {
+  border: 1px solid var(--primary);
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  transform: scale(0.9);
+  display: grid;
+  place-items: center;
+  font-size: 140%;
+  font-weight: unset;
+  color: var(--primary);
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  word-break: break-all;
+}
+.service-item:hover .service-name {
+  transform: scale(1);
+}
+.services-section .item-navigator {
+  display: none;
+}
+/* about us section */
+.aboutus-section {
+  display: flex;
+  flex-direction: column;
+}
+.aboutus-section .learn-more-btn {
+  padding: 15px 20px;
+  margin: 47px auto 0;
+}
+.learn-more-btn span {
+  font-size: 20px;
+  color: inherit;
+}
+
+.learn-more-btn i {
+  font-size: 16px;
+  margin: 1px 0 0 10px;
+  color: inherit;
+}

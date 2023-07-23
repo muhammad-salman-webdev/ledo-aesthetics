@@ -1,0 +1,52 @@
+.contactus-form-container {
+  width: 65%;
+  margin: 40px auto 0;
+}
+
+.contactus-form-container > p > sup {
+  color: var(--primary);
+}
+.contactus-form-container .contactus-form {
+  display: flex;
+  flex-direction: column;
+}
+.contactus-form > * {
+  margin: 17px 0 0 0;
+}
+.contactus-form .double-input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.double-input input {
+  width: 49%;
+}
+.double-input input,
+.contactus-form textarea {
+  border: 0.5px solid var(--primary);
+  outline: 1px solid transparent;
+  border-radius: 5px;
+  background: transparent;
+  padding: 10px 10px;
+  font-size: 14px;
+}
+.double-input input:focus,
+.double-input textarea:focus {
+  outline-color: var(--primary);
+}
+.double-input input,
+.contactus-form button {
+  height: 55px;
+}
+.contactus-form button {
+  width: 100%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.contactus-form textarea {
+  min-width: 100%;
+  max-width: 100%;
+  height: 300px;
+  min-height: 100px;
+}

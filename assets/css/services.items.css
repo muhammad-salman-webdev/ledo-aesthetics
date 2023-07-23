@@ -1,0 +1,97 @@
+.service-container {
+  margin: 70px 0;
+}
+.service-container img {
+  width: 100px;
+}
+.services {
+  margin: 20px 0;
+}
+.service-cate {
+  margin: 50px 0 0 0;
+}
+.service-cate h1 {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 20px;
+}
+.service-cate .desc {
+  font-size: 16px;
+  font-weight: 100;
+  margin: 20px 0 30px;
+  line-height: 1.4;
+}
+.service-cate:not(:last-child)::after {
+  height: 1px;
+  width: 38%;
+  background: var(--primary);
+  content: "";
+  display: block;
+  border-radius: 10px;
+}
+.service-cate .desc ul {
+  margin: 5px 0 0 20px;
+}
+.service-cate .desc ul li {
+  list-style-type: disc;
+}
+.service-bofore-after {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 80px auto 0;
+}
+.service-bofore-after h1 {
+  text-align: left;
+  font-size: 30px;
+  margin: 0 0 40px;
+}
+.service-bofore-after .before-after-images {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.before-after-images img {
+  width: 50%;
+}
+.service-contact-btn .primary-btn-bg {
+  background-color: red;
+  padding: 20px 40px;
+  margin: 35px 0 0 0;
+  font-size: 29px;
+  font-weight: 200;
+  color: black;
+}
+.service-contact-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+  .service-cate:not(:last-child)::after {
+    width: 60%;
+  }
+  .service-bofore-after {
+    width: 100%;
+  }
+  .service-bofore-after h1 {
+    font-size: 26px;
+  }
+  .service-contact-btn .primary-btn-bg {
+    margin: 20px 0 0 0;
+    padding: 10px 20px;
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .service-cate {
+    margin: 30px 0 0 0;
+  }
+  .service-cate h1 {
+    font-size: 18px;
+  }
+  .service-cate .desc {
+    font-size: 15px;
+  }
+}
